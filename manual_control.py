@@ -42,6 +42,8 @@ def step(action):
         print('reward={:.2f}'.format(reward))
 
     if done:
+        print(env.agent.pos)
+        print(env.box.pos)
         print('done!')
         env.reset()
 
